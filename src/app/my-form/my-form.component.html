@@ -1,0 +1,41 @@
+<form [formGroup]="fractionForm" (ngSubmit)="onSubmit()">
+<ion-grid clas="ion-margin">
+  <ion-row>
+    <ion-col>
+      Дріб 1
+    </ion-col>
+    <ion-col>
+      <ion-input #InputNum1 value=1></ion-input>
+    </ion-col>
+    <ion-col>
+      -------------------
+    </ion-col>
+    <ion-col>
+      <ion-input #InputDenum1 value=2></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-select placeholder = "Виберіть операцію">
+      <ion-select-option value="+">+</ion-select-option>
+      <ion-select-option value="-">-</ion-select-option>
+      <ion-select-option value="*">*</ion-select-option>
+      <ion-select-option value="/">/</ion-select-option>
+    </ion-select>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      Дріб 2
+    </ion-col>
+    <ion-col>
+      <ion-input #InputNum2 value=3></ion-input>
+    </ion-col>
+    <ion-col>
+      -------------------
+    </ion-col>
+    <ion-col>
+      <ion-input #InputDenum2 value=5></ion-input>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-button type="submit" expand="block" fill="outline">Розрахунок</ion-button>
+</form>

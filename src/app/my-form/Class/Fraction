@@ -1,0 +1,8 @@
+export class Fraction{
+    num: number
+    denum: number
+    constructor(num, denum){
+        this.num=num;
+        this.denum=denum;
+    }
+}
